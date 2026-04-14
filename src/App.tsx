@@ -92,12 +92,8 @@ export default function App() {
       <main className="relative z-10">
         {/* SECTION 1: HERO */}
         <section className="max-w-7xl mx-auto px-6 pt-20 pb-32 flex flex-col lg:flex-row items-center gap-16">
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex-1 text-center lg:text-left"
-          >
+          <div className="flex-1 text-center lg:text-left">
+
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-magic-purple/20 border border-magic-purple/30 text-magic-purple mb-8">
               <Sparkles className="w-4 h-4" />
               <span className="text-sm font-semibold uppercase tracking-wider">O Despertar do Talento</span>
@@ -123,14 +119,10 @@ export default function App() {
               </motion.a>
               <p className="text-sm text-gray-400 font-medium">Acesso imediato • Pagamento único</p>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="flex-1 relative w-full max-w-lg lg:max-w-none"
-          >
+          <div className="flex-1 relative w-full max-w-lg lg:max-w-none">
+
             {/* Floating Mockup */}
             <motion.div 
               animate={{ y: [-10, 10, -10] }}
@@ -139,7 +131,7 @@ export default function App() {
             >
               <div className="rounded-[2rem] overflow-hidden bg-gray-900 aspect-[4/3] relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&fm=webp&q=50&w=800" 
+                  src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&fm=webp&q=50&w=720" 
                   alt="Criança tocando violão feliz" 
                   className="w-full h-full object-cover opacity-80"
                   loading="eager"
@@ -168,7 +160,7 @@ export default function App() {
 
             {/* Decorative background elements */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-magic-purple/20 blur-[100px] rounded-full z-0"></div>
-          </motion.div>
+          </div>
         </section>
 
         {/* SECTION 2: PAIN POINTS */}
