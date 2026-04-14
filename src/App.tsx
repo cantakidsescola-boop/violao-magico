@@ -139,9 +139,12 @@ export default function App() {
             >
               <div className="rounded-[2rem] overflow-hidden bg-gray-900 aspect-[4/3] relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&q=80&w=1000" 
+                  src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&fm=webp&q=60&w=1000" 
                   alt="Criança tocando violão feliz" 
                   className="w-full h-full object-cover opacity-80"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
                 
