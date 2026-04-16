@@ -300,7 +300,110 @@ export default function App() {
           </div>
         </section>
 
-        {/* SECTION 4: OFFER */}
+        {/* SECTION 4: PARENT FEEDBACK */}
+        <section className="py-24 relative overflow-hidden">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[600px] bg-magic-purple/10 blur-[120px] rounded-full pointer-events-none" />
+          <div className="max-w-7xl mx-auto px-6 relative z-10">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-magic-pink/20 border border-magic-pink/30 text-magic-pink mb-6">
+                <MessageCircle className="w-4 h-4" />
+                <span className="text-sm font-semibold uppercase tracking-wider">Resultados Reais</span>
+              </div>
+              <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
+                O que os pais estão <span className="text-gradient">dizendo</span>
+              </h2>
+              <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+                Mensagens reais de pais que já viram a transformação acontecer com os próprios olhos.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {/* Feedback 1 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="flex flex-col gap-4"
+              >
+                <div className="glass-card rounded-3xl p-6 border-magic-blue/20 relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-magic-blue/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-magic-blue/20 flex items-center justify-center">
+                      <Star className="w-5 h-5 text-magic-blue fill-current" />
+                    </div>
+                    <div>
+                      <p className="font-bold text-white text-sm">Mãe do Miguel</p>
+                      <div className="flex gap-1">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="w-3 h-3 text-magic-yellow fill-current" />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-gray-300 text-sm leading-relaxed italic mb-4">
+                    "Meu filho já tá conseguindo tocar as primeiras notas kkk ele ficou todo feliz 🎸"
+                  </p>
+                </div>
+                <motion.div
+                  whileHover={{ scale: 1.02, rotate: 1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(99,102,241,0.2)] border border-white/10"
+                >
+                  <img
+                    src="/feedback1.jpg"
+                    alt="Print de WhatsApp: mãe mostrando filho tocando violão"
+                    className="w-full object-cover"
+                    loading="lazy"
+                  />
+                </motion.div>
+              </motion.div>
+
+              {/* Feedback 2 */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.15 }}
+                className="flex flex-col gap-4"
+              >
+                <div className="glass-card rounded-3xl p-6 border-magic-pink/20 relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-magic-pink/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-magic-pink/20 flex items-center justify-center">
+                      <Star className="w-5 h-5 text-magic-pink fill-current" />
+                    </div>
+                    <div>
+                      <p className="font-bold text-white text-sm">Pai do Pedro</p>
+                      <div className="flex gap-1">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="w-3 h-3 text-magic-yellow fill-current" />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-gray-300 text-sm leading-relaxed italic mb-4">
+                    "Cara, passando pra te agradecer! O Violão Mágico é surreal... meu filho que não parava quieto com nada tá aqui faz meia hora tentando tirar a primeira música. Valeu cada centavo, de verdade! ❤️"
+                  </p>
+                </div>
+                <motion.div
+                  whileHover={{ scale: 1.02, rotate: -1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(236,72,153,0.2)] border border-white/10"
+                >
+                  <img
+                    src="/feedback2.jpg"
+                    alt="Print de WhatsApp: pai agradecendo pelo app Violão Mágico"
+                    className="w-full object-cover"
+                    loading="lazy"
+                  />
+                </motion.div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* SECTION 5: OFFER */}
         <section className="py-32 relative text-center">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-[400px] bg-magic-sky blur-[150px] opacity-30 pointer-events-none"></div>
           
