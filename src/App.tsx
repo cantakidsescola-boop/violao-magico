@@ -124,9 +124,7 @@ export default function App() {
           <div className="flex-1 relative w-full max-w-lg lg:max-w-none">
 
             {/* Floating Mockup */}
-            <motion.div 
-              animate={{ y: [-10, 10, -10] }}
-              transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
+            <div 
               className="relative z-20 rounded-[2.5rem] p-2 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-xl border border-white/20 shadow-2xl glow-blue"
             >
               <div className="rounded-[2rem] overflow-hidden bg-gray-900 aspect-[4/3] relative">
@@ -158,7 +156,7 @@ export default function App() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* Decorative background elements */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-magic-purple/20 blur-[100px] rounded-full z-0"></div>
@@ -329,9 +327,7 @@ export default function App() {
                 className="flex flex-col gap-4"
               >
 
-                <motion.div
-                  whileHover={{ scale: 1.02, rotate: 1 }}
-                  transition={{ type: "spring", stiffness: 300 }}
+                <div
                   className="rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(99,102,241,0.2)] border border-white/10"
                 >
                   <img
@@ -342,7 +338,7 @@ export default function App() {
                     width="400"
                     height="800"
                   />
-                </motion.div>
+                </div>
               </motion.div>
 
               {/* Feedback 2 */}
@@ -354,9 +350,7 @@ export default function App() {
                 className="flex flex-col gap-4"
               >
 
-                <motion.div
-                  whileHover={{ scale: 1.02, rotate: -1 }}
-                  transition={{ type: "spring", stiffness: 300 }}
+                <div
                   className="rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(236,72,153,0.2)] border border-white/10"
                 >
                   <img
@@ -367,7 +361,7 @@ export default function App() {
                     width="400"
                     height="800"
                   />
-                </motion.div>
+                </div>
               </motion.div>
             </div>
           </div>
