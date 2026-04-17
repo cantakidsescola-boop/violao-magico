@@ -326,25 +326,7 @@ export default function App() {
                 transition={{ duration: 0.6 }}
                 className="flex flex-col gap-4"
               >
-                <div className="glass-card rounded-3xl p-6 border-magic-blue/20 relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-magic-blue/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-full bg-magic-blue/20 flex items-center justify-center">
-                      <Star className="w-5 h-5 text-magic-blue fill-current" />
-                    </div>
-                    <div>
-                      <p className="font-bold text-white text-sm">Mãe do Miguel</p>
-                      <div className="flex gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="w-3 h-3 text-magic-yellow fill-current" />
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                  <p className="text-gray-300 text-sm leading-relaxed italic mb-4">
-                    "Meu filho já tá conseguindo tocar as primeiras notas kkk ele ficou todo feliz 🎸"
-                  </p>
-                </div>
+
                 <motion.div
                   whileHover={{ scale: 1.02, rotate: 1 }}
                   transition={{ type: "spring", stiffness: 300 }}
@@ -367,25 +349,7 @@ export default function App() {
                 transition={{ duration: 0.6, delay: 0.15 }}
                 className="flex flex-col gap-4"
               >
-                <div className="glass-card rounded-3xl p-6 border-magic-pink/20 relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-magic-pink/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-full bg-magic-pink/20 flex items-center justify-center">
-                      <Star className="w-5 h-5 text-magic-pink fill-current" />
-                    </div>
-                    <div>
-                      <p className="font-bold text-white text-sm">Pai do Pedro</p>
-                      <div className="flex gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="w-3 h-3 text-magic-yellow fill-current" />
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                  <p className="text-gray-300 text-sm leading-relaxed italic mb-4">
-                    "Cara, passando pra te agradecer! O Violão Mágico é surreal... meu filho que não parava quieto com nada tá aqui faz meia hora tentando tirar a primeira música. Valeu cada centavo, de verdade! ❤️"
-                  </p>
-                </div>
+
                 <motion.div
                   whileHover={{ scale: 1.02, rotate: -1 }}
                   transition={{ type: "spring", stiffness: 300 }}
