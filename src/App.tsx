@@ -137,6 +137,8 @@ export default function App() {
                   loading="eager"
                   fetchpriority="high"
                   decoding="async"
+                  width="720"
+                  height="540"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
                 
@@ -337,6 +339,8 @@ export default function App() {
                     alt="Print de WhatsApp: mãe mostrando filho tocando violão"
                     className="w-full object-cover"
                     loading="lazy"
+                    width="400"
+                    height="800"
                   />
                 </motion.div>
               </motion.div>
@@ -360,6 +364,8 @@ export default function App() {
                     alt="Print de WhatsApp: pai agradecendo pelo app Violão Mágico"
                     className="w-full object-cover"
                     loading="lazy"
+                    width="400"
+                    height="800"
                   />
                 </motion.div>
               </motion.div>
