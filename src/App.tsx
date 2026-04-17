@@ -104,7 +104,7 @@ export default function App() {
             </h1>
             
             <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              O método gamificado que ensina crianças a tocarem suas primeiras músicas em tempo recorde, sem tédio e sem cobranças. Por apenas R$27.
+              O método gamificado que ensina crianças a tocarem suas primeiras músicas em tempo recorde, sem tédio e sem cobranças. Por apenas R$ 19,90.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
@@ -380,7 +380,7 @@ export default function App() {
               <p className="text-xl text-gray-400 mb-4 line-through">De R$ 97,00</p>
               <div className="flex items-center justify-center gap-4 mb-8">
                 <span className="text-3xl font-bold text-gray-400">por apenas</span>
-                <span className="font-display text-7xl font-bold text-white">R$27</span>
+                <span className="font-display text-7xl font-bold text-white">R$ 19,90</span>
               </div>
               
               <p className="text-lg text-magic-pink font-medium mb-10">Pagamento único • Acesso vitalício</p>
