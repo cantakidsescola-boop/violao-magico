@@ -124,7 +124,7 @@ export default function MagicParticles() {
         window.removeEventListener('mousemove', handleMouseMove);
         cancelAnimationFrame(animationFrameId);
       };
-    }, 1500); // Wait 1.5 seconds after mount to start particles
+    }, 4000); // Wait 4 seconds after mount to start particles
 
     return () => {
       clearTimeout(timeoutId);
